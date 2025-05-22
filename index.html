@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- jsPDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="llgo.png" class="logo" alt="Task Manager Logo">
+    <h1>TO-DO LIST</h1>
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Enter new task" required />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="task-list"></ul>
+
+    <!-- PDF download button -->
+    <button type="button" id="download-pdf">Download PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
